@@ -6,7 +6,7 @@ metadata:
 spec:
   parentRefs:
   - name: hello-gateway
-    sectionName: https
+    sectionName: web
     kind: Gateway
     namespace: hello
 
