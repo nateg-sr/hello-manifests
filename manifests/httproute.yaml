@@ -5,7 +5,8 @@ metadata:
 
 spec:
   parentRefs:
-  - name: hello-gateway
+    - group: gateway.networking.k8s.io
+    name: hello-gateway
     sectionName: websecure
     kind: Gateway
     namespace: hello
@@ -16,4 +17,11 @@ spec:
   rules:
   - backendRefs:
     - name: hello-svc
+      group: ''
+      kind: Service
       port: 3000
+      weigth: 1
+    matches:
+      - path:
+          type: PathPrefix
+          value: /
