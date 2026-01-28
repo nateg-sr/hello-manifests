@@ -16,10 +16,7 @@ spec:
   rules:
   - backendRefs:
     - name: hello-svc
-      group: ''
-      kind: Service
       port: 3000
-      weigth: 1
     matches:
       - path:
           type: PathPrefix
