@@ -11,7 +11,7 @@ spec:
     namespace: hello
 
   hostnames:
-  - hello.com
+  - dev.hello.com
 
   rules:
   - backendRefs:
