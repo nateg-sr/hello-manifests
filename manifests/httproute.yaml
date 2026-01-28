@@ -5,8 +5,7 @@ metadata:
 
 spec:
   parentRefs:
-  - group: gateway.networking.k8s.io
-    name: hello-gateway
+  - name: hello-gateway
     sectionName: websecure
     kind: Gateway
     namespace: hello
