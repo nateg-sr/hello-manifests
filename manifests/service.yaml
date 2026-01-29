@@ -8,7 +8,8 @@ metadata:
     k8s-app: hello
 spec:
   ports:
-    - protocol: TCP
+    - name: hello-port
+      protocol: TCP
       port: 3000
       targetPort: 3000
   selector:
