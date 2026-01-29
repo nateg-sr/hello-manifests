@@ -4,7 +4,8 @@ metadata:
   name: hello-svc
   labels:
     app: hello
-    service: hello
+    service: hello-svc
+    k8s-app: hello
 spec:
   ports:
     - protocol: TCP
